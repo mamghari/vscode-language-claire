@@ -1,6 +1,6 @@
 {
-  "scopeName": "source.cool",
-  "name": "COOL",
+  "scopeName": "source.claire",
+  "name": "CLAIRE",
   "fileTypes": [
     "cl"
   ],
@@ -15,7 +15,7 @@
         {
           "begin": "{",
           "end": "}",
-          "name": "meta.block.cool",
+          "name": "meta.block.claire",
           "patterns": [
             {
               "include": "#code"
@@ -28,7 +28,7 @@
       "patterns": [
         {
           "match": "(Int|String|Bool|IO|Object)",
-          "name": "support.class.cool"
+          "name": "support.class.claire"
         },
         {
           "match": "(abort|type_name|copy|out_string|out_int|in_string|in_int|length|concat|substr)",
@@ -44,20 +44,20 @@
       "begin": "((?i:class))\\s+([A-Z][A-Za-z0-9_]*)(\\s+((?i:inherits))\\s+([A-Z][A-Za-z0-9_]*))?\\b",
       "beginCaptures": {
         "1": {
-          "name": "storage.type.cool"
+          "name": "storage.type.claire"
         },
         "2": {
-          "name": "entity.name.type.class.cool"
+          "name": "entity.name.type.class.claire"
         },
         "4": {
-          "name": "keyword.operator.cool"
+          "name": "keyword.operator.claire"
         },
         "5": {
-          "name": "entity.name.type.class.cool"
+          "name": "entity.name.type.class.claire"
         }
       },
       "end": "}",
-      "name": "meta.class.cool",
+      "name": "meta.class.claire",
       "patterns": [
         {
           "begin": "{",
@@ -102,17 +102,17 @@
     "line_comment": {
       "begin": "--",
       "end": "$\\n?",
-      "name": "comment.line.double-dash.cool"
+      "name": "comment.line.double-dash.claire"
     },
 		"sharp_comment": {
       "begin": "#",
       "end": "$\\n?",
-      "name": "comment.line.sharp.cool"
+      "name": "comment.line.sharp.claire"
     },
     "block_comment": {
       "begin": "\\(\\*",
       "end": "\\*\\)\\n?",
-      "name": "comment.block.documentation.cool",
+      "name": "comment.block.documentation.claire",
       "patterns": [
         {
           "include": "#block_comment"
@@ -136,20 +136,20 @@
       "patterns": [
         {
           "match": "\\b(true|false)\\b",
-          "name": "constant.language.cool"
+          "name": "constant.language.claire"
         },
         {
           "match": "\\b([1-9][0-9]*|0)\\b",
-          "name": "constant.numeric.cool"
+          "name": "constant.numeric.claire"
         },
         {
           "begin": "(?<!\\\\)\"",
           "end": "(?<!\\\\)\"",
-          "name": "string.quoted.double.cool",
+          "name": "string.quoted.double.claire",
           "patterns": [
             {
               "match": "\\\\(n|t|b|c|v|f|r)",
-              "name": "constant.character.escape.cool"
+              "name": "constant.character.escape.claire"
             }
           ]
         }
@@ -158,12 +158,12 @@
     "keywords": {
       "patterns": [
         {
-          "match": "\\b(if|then|else|fi|while|loop|pool|case|esac)\\b",
-          "name": "keyword.control.cool"
+          "match": "\\b(if|then|else|fi|while|loop|pool|case)\\b",
+          "name": "keyword.control.claire"
         },
         {
-          "match": "\\b(in|inherits|isvoid|let|new|of|not)\\b",
-          "name": "keyword.operator.cool"
+          "match": "\\b(in|inherits|isvoid|let|new|of|not|list)\\b",
+          "name": "keyword.operator.claire"
         }
       ]
     },
@@ -171,25 +171,25 @@
       "patterns": [
         {
           "match": "\\b([a-z][A-Za-z0-9_]*)\\s*\\(\\s*(?:([a-z][A-Za-z0-9_]*)\\s*:\\s*([A-Z][A-Za-z0-9_]*))?(?:\\s*,\\s*([a-z][A-Za-z0-9_]*)\\s*:\\s*([A-Z][A-Za-z0-9_]*))*\\s*\\)\\s*:\\s*([A-Z][A-Za-z0-9_]*)\\b",
-          "name": "meta.method.cool",
+          "name": "meta.method.claire",
           "captures": {
             "1": {
-              "name": "entity.name.function.cool"
+              "name": "entity.name.function.claire"
             },
             "2": {
-              "name": "variable.parameter.cool"
+              "name": "variable.parameter.claire"
             },
             "3": {
-              "name": "storage.type.cool"
+              "name": "storage.type.claire"
             },
             "4": {
-              "name": "variable.parameter.cool"
+              "name": "variable.parameter.claire"
             },
             "5": {
-              "name": "storage.type.cool"
+              "name": "storage.type.claire"
             },
             "6": {
-              "name": "storage.type.cool"
+              "name": "storage.type.claire"
             }
           }
         }
