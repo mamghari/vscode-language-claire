@@ -5,6 +5,9 @@ Claire language support for vscode
 [Claire](https://en.wikipedia.org/wiki/Claire_(programming_language)) is a
 functional & OOP language designed for rules processing.
 
+# Publishing extension on VSCode marketplace
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+
 # About VSCode Language Syntax
 
 TODO
