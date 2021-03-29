@@ -27,11 +27,11 @@
     "builtins": {
       "patterns": [
         {
-          "match": "(integer|string|boolean|void|type|float|any)",
+          "match": "(integer|string|boolean|void|type|float|any|bag|set|list|tuple|method|nil|char)",
           "name": "support.class.claire"
         },
         {
-          "match": "(abort|type_name|copy|out_string|out_int|in_string|in_int|length|concat|substr)",
+          "match": "(abort|type_name|copy|fopen|format|freadline|fread|freadwrite|funcall|fwrite|integer!|list!|log|min|max|new|put|pwd|random|setenv|gc|int|getenv|getc|find|fcopy|length|concat|substring|string!|trim|write)",
           "name": "support.function.cool"
         },
         {
@@ -100,18 +100,23 @@
       ]
     },
     "line_comment": {
-      "begin": "--",
+      "begin": "//",
       "end": "$\\n?",
-      "name": "comment.line.double-dash.claire"
+      "name": "comment.line.double-slash.claire"
     },
-		"sharp_comment": {
+   "line_comment_semicolon": {
+      "begin": ";",
+      "end": "$\\n?",
+      "name": "comment.line.semicolon.claire"
+    },
+   "sharp_comment": {
       "begin": "#",
       "end": "$\\n?",
       "name": "comment.line.sharp.claire"
     },
     "block_comment": {
-      "begin": "\\(\\*",
-      "end": "\\*\\)\\n?",
+      "begin": "\\/\\*",
+      "end": "\\*\\/\\n?",
       "name": "comment.block.documentation.claire",
       "patterns": [
         {
@@ -124,7 +129,10 @@
         {
           "include": "#line_comment"
         },
-				{
+	{
+          "include": "#line_comment_semicolon"
+        },
+	{
           "include": "#sharp_comment"
         },
         {
