@@ -27,7 +27,7 @@
     "builtins": {
       "patterns": [
         {
-          "match": "(Int|String|Bool|IO|Object)",
+          "match": "(integer|string|boolean|void|type|float|any)",
           "name": "support.class.claire"
         },
         {
@@ -158,11 +158,11 @@
     "keywords": {
       "patterns": [
         {
-          "match": "\\b(if|then|else|fi|while|loop|pool|case)\\b",
+          "match": "\\b(if|then|else|when|while|for|forall|case)\\b",
           "name": "keyword.control.claire"
         },
         {
-          "match": "\\b(in|inherits|isvoid|let|new|of|not|list)\\b",
+          "match": "\\b(in|inherits|isvoid|let|new|of|not|list|set|class|final|member)\\b",
           "name": "keyword.operator.claire"
         }
       ]
